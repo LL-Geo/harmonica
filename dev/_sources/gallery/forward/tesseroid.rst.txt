@@ -1,10 +1,12 @@
-.. note::
-    :class: sphx-glr-download-link-note
+.. only:: html
 
-    Click :ref:`here <sphx_glr_download_gallery_forward_tesseroid.py>` to download the full example code
-.. rst-class:: sphx-glr-example-title
+    .. note::
+        :class: sphx-glr-download-link-note
 
-.. _sphx_glr_gallery_forward_tesseroid.py:
+        Click :ref:`here <sphx_glr_download_gallery_forward_tesseroid.py>`     to download the full example code
+    .. rst-class:: sphx-glr-example-title
+
+    .. _sphx_glr_gallery_forward_tesseroid.py:
 
 
 Tesseroids (spherical prisms)
@@ -20,6 +22,7 @@ function.
 
 
 .. image:: /gallery/forward/images/sphx_glr_tesseroid_001.png
+    :alt: Downward component of gravitational acceleration
     :class: sphx-glr-single-img
 
 
@@ -29,6 +32,8 @@ function.
 
  .. code-block:: none
 
+    /usr/share/miniconda3/envs/testing/lib/python3.8/site-packages/numba/np/ufunc/parallel.py:363: NumbaWarning: [1mThe TBB threading layer requires TBB version 2019.5 or later i.e., TBB_INTERFACE_VERSION >= 11005. Found TBB_INTERFACE_VERSION = 9107. The TBB threading layer is disabled.[0m
+      warnings.warn(problem)
     [[26.25264292 26.6161005  26.98494351 ... 26.98494351 26.6161005
       26.25264292]
      [26.82151989 27.2134279  27.61202586 ... 27.61202586 27.2134279
@@ -93,7 +98,7 @@ function.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.140 seconds)
+   **Total running time of the script:** ( 0 minutes  4.231 seconds)
 
 
 .. _sphx_glr_download_gallery_forward_tesseroid.py:
@@ -106,13 +111,13 @@ function.
 
 
 
-  .. container:: sphx-glr-download
+  .. container:: sphx-glr-download sphx-glr-download-python
 
      :download:`Download Python source code: tesseroid.py <tesseroid.py>`
 
 
 
-  .. container:: sphx-glr-download
+  .. container:: sphx-glr-download sphx-glr-download-jupyter
 
      :download:`Download Jupyter notebook: tesseroid.ipynb <tesseroid.ipynb>`
 

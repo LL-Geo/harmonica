@@ -61,9 +61,10 @@ eql.fit(coordinates, data.total_field_anomaly_nt)
 print("R² score:", eql.score(coordinates, data.total_field_anomaly_nt))
 
 # Interpolate data on a regular grid with 500 m spacing. The interpolation
-# requires an extra coordinate (upward height). By passing in 1500 m, we're
-# effectively upward-continuing the data (mean flight height is 500 m).
-grid = eql.grid(spacing=500, data_names=["magnetic_anomaly"], extra_coords=1500)
+# requires the height of the grid points (upward coordinate). By passing in
+# 1500 m, we're effectively upward-continuing the data (mean flight height is
+# 500 m).
+grid = eql.grid(upward=1500, spacing=500, data_names=["magnetic_anomaly"])
 
 # The grid is a xarray.Dataset with values, coordinates, and metadata
 print("\nGenerated grid:\n", grid)
@@ -103,5 +104,4 @@ plt.colorbar(tmp, ax=ax2, label="nT", pad=0.05, aspect=40, orientation="horizont
 ax2.set_xlim(easting.min(), easting.max())
 ax2.set_ylim(northing.min(), northing.max())
 
-plt.tight_layout(pad=0)
 plt.show()
